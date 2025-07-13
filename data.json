@@ -1,0 +1,414 @@
+[
+  {
+    "nombre": "Biología Celular",
+    "semestre": 1,
+    "prerrequisitos": []
+  },
+  {
+    "nombre": "Zoología y Ecología Aplicada",
+    "semestre": 1,
+    "prerrequisitos": []
+  },
+  {
+    "nombre": "Educación Física y Salud",
+    "semestre": 1,
+    "prerrequisitos": []
+  },
+  {
+    "nombre": "Química General",
+    "semestre": 1,
+    "prerrequisitos": []
+  },
+  {
+    "nombre": "Elementos de Cálculo",
+    "semestre": 1,
+    "prerrequisitos": []
+  },
+  {
+    "nombre": "Introducción a la Medicina Veterinaria I",
+    "semestre": 1,
+    "prerrequisitos": []
+  },
+  {
+    "nombre": "Optativo de Formación General I",
+    "semestre": 1,
+    "prerrequisitos": []
+  },
+  {
+    "nombre": "Bioquímica Veterinaria",
+    "semestre": 2,
+    "prerrequisitos": [
+      "Química General"
+    ]
+  },
+  {
+    "nombre": "Histología",
+    "semestre": 2,
+    "prerrequisitos": [
+      "Biología Celular"
+    ]
+  },
+  {
+    "nombre": "Embriología Veterinaria",
+    "semestre": 2,
+    "prerrequisitos": []
+  },
+  {
+    "nombre": "Anatomía Veterinaria",
+    "semestre": 2,
+    "prerrequisitos": []
+  },
+  {
+    "nombre": "Zootecnia",
+    "semestre": 2,
+    "prerrequisitos": [
+      "Zoología y Ecología Aplicada"
+    ]
+  },
+  {
+    "nombre": "Introducción a la Medicina Veterinaria II",
+    "semestre": 2,
+    "prerrequisitos": [
+      "Introducción a la Medicina Veterinaria I"
+    ]
+  },
+  {
+    "nombre": "Optativo de Formación General II",
+    "semestre": 2,
+    "prerrequisitos": []
+  },
+  {
+    "nombre": "Fisiología Veterinaria",
+    "semestre": 3,
+    "prerrequisitos": [
+      "Bioquímica Veterinaria"
+    ]
+  },
+  {
+    "nombre": "Microbiología General",
+    "semestre": 3,
+    "prerrequisitos": [
+      "Histología"
+    ]
+  },
+  {
+    "nombre": "Inmunología",
+    "semestre": 3,
+    "prerrequisitos": [
+      "Histología",
+      "Microbiología General"
+    ]
+  },
+  {
+    "nombre": "Morfología Veterinaria Aplicada",
+    "semestre": 3,
+    "prerrequisitos": [
+      "Anatomía Veterinaria"
+    ]
+  },
+  {
+    "nombre": "Bioestadística",
+    "semestre": 3,
+    "prerrequisitos": [
+      "Elementos de Cálculo"
+    ]
+  },
+  {
+    "nombre": "Inglés I",
+    "semestre": 3,
+    "prerrequisitos": []
+  },
+  {
+    "nombre": "Fisiopatología Veterinaria",
+    "semestre": 4,
+    "prerrequisitos": [
+      "Fisiología Veterinaria"
+    ]
+  },
+  {
+    "nombre": "Enfermedades Infecciosas",
+    "semestre": 4,
+    "prerrequisitos": [
+      "Microbiología General"
+    ]
+  },
+  {
+    "nombre": "Patología General",
+    "semestre": 4,
+    "prerrequisitos": [
+      "Inmunología"
+    ]
+  },
+  {
+    "nombre": "Etología y Bienestar Animal",
+    "semestre": 4,
+    "prerrequisitos": [
+      "Zootecnia"
+    ]
+  },
+  {
+    "nombre": "Fisiología Reproductiva",
+    "semestre": 4,
+    "prerrequisitos": [
+      "Embriología Veterinaria"
+    ]
+  },
+  {
+    "nombre": "Práctica Básica",
+    "semestre": 4,
+    "prerrequisitos": []
+  },
+  {
+    "nombre": "Farmacología Veterinaria",
+    "semestre": 5,
+    "prerrequisitos": [
+      "Fisiopatología Veterinaria"
+    ]
+  },
+  {
+    "nombre": "Enfermedades Parasitarias",
+    "semestre": 5,
+    "prerrequisitos": [
+      "Patología General"
+    ]
+  },
+  {
+    "nombre": "Patología Especial e Inmunopatología",
+    "semestre": 5,
+    "prerrequisitos": [
+      "Patología General"
+    ]
+  },
+  {
+    "nombre": "Nutrición y Alimentación",
+    "semestre": 5,
+    "prerrequisitos": [
+      "Etología y Bienestar Animal"
+    ]
+  },
+  {
+    "nombre": "Reproducción Animal I",
+    "semestre": 5,
+    "prerrequisitos": [
+      "Fisiología Reproductiva"
+    ]
+  },
+  {
+    "nombre": "Inglés II",
+    "semestre": 5,
+    "prerrequisitos": [
+      "Inglés I"
+    ]
+  },
+  {
+    "nombre": "Enfermedades de Aves",
+    "semestre": 6,
+    "prerrequisitos": [
+      "Enfermedades Parasitarias"
+    ]
+  },
+  {
+    "nombre": "Acuicultura y Enfermedades de Peces",
+    "semestre": 6,
+    "prerrequisitos": [
+      "Farmacología Veterinaria"
+    ]
+  },
+  {
+    "nombre": "Reproducción Animal II",
+    "semestre": 6,
+    "prerrequisitos": [
+      "Reproducción Animal I"
+    ]
+  },
+  {
+    "nombre": "Producción de No Rumiantes",
+    "semestre": 6,
+    "prerrequisitos": [
+      "Nutrición y Alimentación"
+    ]
+  },
+  {
+    "nombre": "Economía y Administración Pecuaria",
+    "semestre": 6,
+    "prerrequisitos": []
+  },
+  {
+    "nombre": "Inglés III",
+    "semestre": 6,
+    "prerrequisitos": [
+      "Inglés II"
+    ]
+  },
+  {
+    "nombre": "Cirugía General y Anestesiología",
+    "semestre": 7,
+    "prerrequisitos": [
+      "Farmacología Veterinaria"
+    ]
+  },
+  {
+    "nombre": "Medicina Interna I",
+    "semestre": 7,
+    "prerrequisitos": [
+      "Enfermedades de Aves"
+    ]
+  },
+  {
+    "nombre": "Exploración Clínica",
+    "semestre": 7,
+    "prerrequisitos": [
+      "Patología Especial e Inmunopatología"
+    ]
+  },
+  {
+    "nombre": "Producción de Rumiantes I",
+    "semestre": 7,
+    "prerrequisitos": [
+      "Producción de No Rumiantes"
+    ]
+  },
+  {
+    "nombre": "Genética Pecuaria",
+    "semestre": 7,
+    "prerrequisitos": [
+      "Bioestadística"
+    ]
+  },
+  {
+    "nombre": "Epidemiología Veterinaria",
+    "semestre": 7,
+    "prerrequisitos": [
+      "Bioestadística"
+    ]
+  },
+  {
+    "nombre": "Optativo de Especialización I",
+    "semestre": 7,
+    "prerrequisitos": []
+  },
+  {
+    "nombre": "Patología Quirúrgica y Cirugía Especial",
+    "semestre": 8,
+    "prerrequisitos": [
+      "Cirugía General y Anestesiología"
+    ]
+  },
+  {
+    "nombre": "Medicina Interna II",
+    "semestre": 8,
+    "prerrequisitos": [
+      "Medicina Interna I"
+    ]
+  },
+  {
+    "nombre": "Métodos Complementarios de Diagnóstico",
+    "semestre": 8,
+    "prerrequisitos": [
+      "Exploración Clínica"
+    ]
+  },
+  {
+    "nombre": "Producción de Rumiantes II",
+    "semestre": 8,
+    "prerrequisitos": [
+      "Producción de Rumiantes I"
+    ]
+  },
+  {
+    "nombre": "Productos Animales",
+    "semestre": 8,
+    "prerrequisitos": [
+      "Producción de No Rumiantes"
+    ]
+  },
+  {
+    "nombre": "Optativo de Especialización II",
+    "semestre": 8,
+    "prerrequisitos": [
+      "Optativo de Especialización I"
+    ]
+  },
+  {
+    "nombre": "Optativo de Profundización I",
+    "semestre": 8,
+    "prerrequisitos": []
+  },
+  {
+    "nombre": "Práctica Transferencia Tecnológica",
+    "semestre": 8,
+    "prerrequisitos": []
+  },
+  {
+    "nombre": "Clínica de Rumiantes",
+    "semestre": 9,
+    "prerrequisitos": [
+      "Producción de Rumiantes II",
+      "Medicina Interna II"
+    ]
+  },
+  {
+    "nombre": "Clínica de Equinos",
+    "semestre": 9,
+    "prerrequisitos": [
+      "Medicina Interna II"
+    ]
+  },
+  {
+    "nombre": "Clínica de Pequeños Animales",
+    "semestre": 9,
+    "prerrequisitos": [
+      "Medicina Interna II"
+    ]
+  },
+  {
+    "nombre": "Formulación y Evaluación de Proyectos",
+    "semestre": 9,
+    "prerrequisitos": [
+      "Economía y Administración Pecuaria"
+    ]
+  },
+  {
+    "nombre": "Control Sanitario e Inocuidad de los Alimentos",
+    "semestre": 9,
+    "prerrequisitos": [
+      "Productos Animales"
+    ]
+  },
+  {
+    "nombre": "Salud Pública Veterinaria",
+    "semestre": 9,
+    "prerrequisitos": [
+      "Epidemiología Veterinaria"
+    ]
+  },
+  {
+    "nombre": "Práctica Profesional",
+    "semestre": 9,
+    "prerrequisitos": []
+  },
+  {
+    "nombre": "Optativo de Profundización II",
+    "semestre": 9,
+    "prerrequisitos": [
+      "Optativo de Profundización I"
+    ]
+  },
+  {
+    "nombre": "Práctica Inspección de Alimentos",
+    "semestre": 9,
+    "prerrequisitos": [
+      "Control Sanitario e Inocuidad de los Alimentos"
+    ]
+  },
+  {
+    "nombre": "Proyecto de Título",
+    "semestre": 10,
+    "prerrequisitos": []
+  },
+  {
+    "nombre": "Internado Clínico",
+    "semestre": 10,
+    "prerrequisitos": []
+  }
+]
