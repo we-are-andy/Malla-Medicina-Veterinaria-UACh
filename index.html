@@ -1,81 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Malla Medicina Veterinaria UACh</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <title>Malla Medicina Veterinaria</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <h1>Malla Medicina Veterinaria UACh</h1>
-
-  <div id="malla-container">
-    
-    <!-- SEMESTRE 1 -->
-    <div class="semestre">
-      <h3>1° Semestre</h3>
-      <div class="ramo" data-codigo="BIO101" onclick="toggleRamo(this)">Biología General</div>
-      <div class="ramo" data-codigo="QUI101" onclick="toggleRamo(this)">Química General</div>
-      <div class="ramo" data-codigo="MAT101" onclick="toggleRamo(this)">Matemática Básica</div>
+    <h1>Malla Medicina Veterinaria</h1>
+    <div class="semestres-container">
+        <!-- Los semestres y ramos se llenarán desde JavaScript -->
     </div>
-
-    <!-- SEMESTRE 2 -->
-    <div class="semestre">
-      <h3>2° Semestre</h3>
-      <div class="ramo" data-codigo="BIO201" data-prer="BIO101" onclick="toggleRamo(this)">Biología Celular</div>
-      <div class="ramo" data-codigo="QUI201" data-prer="QUI101" onclick="toggleRamo(this)">Química Orgánica</div>
-      <div class="ramo" data-codigo="FIS101" data-prer="MAT101" onclick="toggleRamo(this)">Física Veterinaria</div>
-    </div>
-
-    <!-- Puedes seguir agregando más semestres aquí -->
-
-  </div>
-
-  <!-- Script de lógica de prerrequisitos -->
-  <script>
-    const estadoRamos = {};
-
-    function toggleRamo(element) {
-      const codigo = element.dataset.codigo;
-      const prer = element.dataset.prer ? element.dataset.prer.split(',') : [];
-
-      if (estadoRamos[codigo]) {
-        element.classList.remove('selected');
-        estadoRamos[codigo] = false;
-      } else {
-        const faltan = prer.filter(p => !estadoRamos[p]);
-        if (faltan.length === 0) {
-          element.classList.add('selected');
-          estadoRamos[codigo] = true;
-        } else {
-          alert("Aún no cumples los prerrequisitos: " + faltan.join(', '));
-          return;
-        }
-      }
-
-      actualizarHabilitados();
-    }
-
-    function actualizarHabilitados() {
-      const ramos = document.querySelectorAll('.ramo');
-      ramos.forEach(ramo => {
-        const codigo = ramo.dataset.codigo;
-        const prer = ramo.dataset.prer ? ramo.dataset.prer.split(',') : [];
-        const habilitado = prer.every(p => estadoRamos[p]);
-
-        if (!estadoRamos[codigo]) {
-          if (prer.length === 0 || habilitado) {
-            ramo.classList.remove('disabled');
-          } else {
-            ramo.classList.add('disabled');
-          }
-        }
-      });
-    }
-
-    document.addEventListener("DOMContentLoaded", actualizarHabilitados);
-  </script>
-
+    <script src="script.js"></script>
 </body>
 </html>
