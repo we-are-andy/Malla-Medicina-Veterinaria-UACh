@@ -1,23 +1,51 @@
-async function cargarMalla() {
-  const res = await fetch('data.json');
-  const data = await res.json();
+const datos = {
+    "1° Semestre": [
+        "BIOLOGIA CELULAR", "ZOOLOGIA Y ECOLOGIA APLICADA", "EDUCACIÓN FÍSICA Y SALUD",
+        "OPTATIVO DE FORMACION GENERAL I", "ELEMENTOS DE CALCULO",
+        "PRACTICA INTRODUCCION A LA MEDICINA VETERINARIA I", "QUIMICA GENERAL"
+    ],
+    "2° Semestre": [
+        "ANATOMIA VETERINARIA", "EMBRIOLOGIA VETERINARIA", "OPTATIVO DE FORMACION GENERAL II",
+        "BIOQUIMICA VETERINARIA", "HISTOLOGIA", "PRACTICA INTRODUCCION A LA MEDICINA VETERINARIA II"
+    ],
+};
 
-  const container = document.getElementById('malla-container');
-  const maxSemestre = Math.max(...data.map(r => r.semestre));
+const prerrequisitos = {
+    "ANATOMIA VETERINARIA": ["BIOLOGIA CELULAR"],
+    "EMBRIOLOGIA VETERINARIA": ["BIOLOGIA CELULAR"],
+    "BIOQUIMICA VETERINARIA": ["BIOLOGIA CELULAR"],
+    "HISTOLOGIA": ["BIOLOGIA CELULAR"],
+    "PRACTICA INTRODUCCION A LA MEDICINA VETERINARIA II": ["PRACTICA INTRODUCCION A LA MEDICINA VETERINARIA I"]
+};
 
-  for (let s = 1; s <= maxSemestre; s++) {
-    const col = document.createElement('div');
-    col.className = 'semestre';
-    col.innerHTML = `<h3>Semestre ${s}</h3>`;
-    data.filter(r => r.semestre === s).forEach(ramo => {
-      const div = document.createElement('div');
-      div.className = 'ramo';
-      div.title = ramo.prerrequisitos.length ? "Prerrequisitos: " + ramo.prerrequisitos.join(", ") : "Sin prerrequisitos";
-      div.textContent = ramo.nombre;
-      col.appendChild(div);
+const container = document.querySelector(".semestres-container");
+
+for (const [semestre, ramos] of Object.entries(datos)) {
+    const col = document.createElement("div");
+    col.className = "semestre";
+    col.innerHTML = `<h2>${semestre}</h2>`;
+    ramos.forEach(ramo => {
+        const div = document.createElement("div");
+        div.className = "ramo";
+        div.textContent = ramo;
+        div.dataset.nombre = ramo;
+        div.onclick = () => marcarHabilitados(ramo);
+        col.appendChild(div);
     });
     container.appendChild(col);
-  }
 }
 
-cargarMalla();
+function marcarHabilitados(nombre) {
+    document.querySelectorAll(".ramo").forEach(el => {
+        el.classList.remove("habilitado");
+    });
+
+    for (const [ramo, pre] of Object.entries(prerrequisitos)) {
+        if (pre.includes(nombre)) {
+            const selector = `.ramo[data-nombre="${ramo}"]`;
+            const el = document.querySelector(selector);
+            if (el) el.classList.add("habilitado");
+        }
+    }
+}
+
