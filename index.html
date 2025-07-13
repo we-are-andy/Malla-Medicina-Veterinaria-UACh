@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Malla Medicina Veterinaria</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <title>Mi malla interactiva</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <h1>Malla Medicina Veterinaria</h1>
-    <div class="semestres-container">
-        <!-- Los semestres y ramos se llenarán desde JavaScript -->
+    <h1>Mi malla interactiva</h1>
+
+    <div class="malla">
+        <!-- Ejemplo de materia -->
+        <div class="materia" id="materia1" data-prereq="none">Materia 1</div>
+        <div class="materia" id="materia2" data-prereq="materia1">Materia 2</div>
+        <div class="materia" id="materia3" data-prereq="materia1">Materia 3</div>
+        <div class="materia" id="materia4" data-prereq="materia2,materia3">Materia 4</div>
     </div>
+
+    <button id="boton">Mostrar materias habilitadas</button>
+
     <script src="script.js"></script>
 </body>
 </html>
