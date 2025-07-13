@@ -37,16 +37,12 @@
   {
     "nombre": "Bioquímica Veterinaria",
     "semestre": 2,
-    "prerrequisitos": [
-      "Química General"
-    ]
+    "prerrequisitos": ["Biología Celular"]
   },
   {
     "nombre": "Histología",
     "semestre": 2,
-    "prerrequisitos": [
-      "Biología Celular"
-    ]
+    "prerrequisitos": ["Biología Celular"]
   },
   {
     "nombre": "Embriología Veterinaria",
@@ -61,16 +57,12 @@
   {
     "nombre": "Zootecnia",
     "semestre": 2,
-    "prerrequisitos": [
-      "Zoología y Ecología Aplicada"
-    ]
+    "prerrequisitos": ["Zoología y Ecología Aplicada"]
   },
   {
     "nombre": "Introducción a la Medicina Veterinaria II",
     "semestre": 2,
-    "prerrequisitos": [
-      "Introducción a la Medicina Veterinaria I"
-    ]
+    "prerrequisitos": ["Introducción a la Medicina Veterinaria I"]
   },
   {
     "nombre": "Optativo de Formación General II",
@@ -80,24 +72,17 @@
   {
     "nombre": "Fisiología Veterinaria",
     "semestre": 3,
-    "prerrequisitos": [
-      "Bioquímica Veterinaria"
-    ]
+    "prerrequisitos": ["Bioquímica Veterinaria"]
   },
   {
     "nombre": "Microbiología General",
     "semestre": 3,
-    "prerrequisitos": [
-      "Histología"
-    ]
+    "prerrequisitos": ["Histología"]
   },
   {
     "nombre": "Inmunología",
     "semestre": 3,
-    "prerrequisitos": [
-      "Histología",
-      "Microbiología General"
-    ]
+    "prerrequisitos": ["Microbiología General"]
   },
   {
     "nombre": "Morfología Veterinaria Aplicada",
